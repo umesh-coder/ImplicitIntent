@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B9F6CA"
+    tools:context=".MapView">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/Latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Longtitude"
+        android:textColorHint="@color/design_default_color_primary"
+        android:maxLines="1"
+        android:textColor="@color/black" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:textColorHint="@color/design_default_color_primary"
+        android:layout_marginLeft="210dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Longtitude"
+
+        android:textColor="@color/black"
+        android:maxLines="1"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@color/purple_700"
+        android:text="Get Location" />
+
+
+
+    <include layout="@layout/fragment_maps" />
+
+</FrameLayout>

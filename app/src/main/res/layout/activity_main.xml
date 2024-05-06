@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+
+   <com.google.android.material.tabs.TabLayout
+
+       android:id="@+id/tablay"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/design_default_color_primary_variant"
+       app:tabTextColor="@color/white"
+       app:tabSelectedTextColor="@color/teal_200"
+
+       >
+
+
+       <com.google.android.material.tabs.TabItem
+           android:id="@+id/webview_button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Web View"
+
+
+
+           />
+
+       <com.google.android.material.tabs.TabItem
+           android:id="@+id/mapview_button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:text="Map View "
+           />
+
+
+
+   </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_below="@id/tablay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+
+
+
+</RelativeLayout>

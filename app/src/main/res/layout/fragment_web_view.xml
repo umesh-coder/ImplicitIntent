@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WebView"
+    android:background="@color/white"
+
+    >
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Link"
+        android:textSize="20dp"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHint="@color/design_default_color_primary_dark"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+
+        android:layout_marginLeft="150dp"
+        android:layout_below="@+id/link"
+        android:id="@+id/open_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Link"
+        android:background="@color/purple_700"
+        android:textAlignment="center"
+        android:textSize="15dp"
+        android:textColor="@color/white"
+        />
+
+    <WebView
+
+        android:layout_marginTop="3dp"
+        android:id="@+id/web"
+        android:layout_below="@id/open_link"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp" />
+
+</RelativeLayout>
